@@ -15,6 +15,7 @@ else{
 }
 
 
+
 //ranking
 var place='second'
 if(place=='first'){
@@ -26,6 +27,7 @@ if(place=='first'){
 }else{
     console.log('No Medal')
 }
+
 
 
 //trafficlight
@@ -46,6 +48,7 @@ switch(light) {
  }
 
 
+
 //Old Enough to get a salary
 var age=12
 if(age>=65){
@@ -60,6 +63,7 @@ else if(age<18){
 else{
     console.log("The value of age variable is not numerical")
 }
+
 
 
 //Days of the week
