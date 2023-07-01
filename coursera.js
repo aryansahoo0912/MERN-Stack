@@ -1,11 +1,11 @@
-//greeting
+//Greeting
 var name="Aryan"
 var greet="Hello"
 console.log(greet,name)
 
 
 
-//results
+//Eesults
 var result=98;
 if(result>90){
     console.log("Passed")
@@ -16,7 +16,7 @@ else{
 
 
 
-//ranking
+//Ranking
 var place='second'
 if(place=='first'){
     console.log('Gold')
@@ -30,7 +30,7 @@ if(place=='first'){
 
 
 
-//trafficlight
+//Traffic Light
 var light='red'
 switch(light) {
     case 'green':
