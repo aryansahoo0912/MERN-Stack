@@ -5,7 +5,7 @@ console.log(greet,name)
 
 
 
-//Eesults
+//Results
 var result=98;
 if(result>90){
     console.log("Passed")
