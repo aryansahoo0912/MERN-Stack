@@ -66,7 +66,7 @@ else{
 
 
 
-//Days of the week
+//Days of the week.
 var day = `Saturday`;
 switch(day) {
    case 'Monday':
