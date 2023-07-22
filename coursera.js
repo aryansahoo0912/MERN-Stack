@@ -135,3 +135,8 @@ for(var year=2023;year<=2025;year++){
     }
 }
 
+function letterFinder(word, match){
+    for(i=0;i++; i<word.length){
+       if 
+    }
+}
