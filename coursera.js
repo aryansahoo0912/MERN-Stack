@@ -146,3 +146,21 @@ function letterFinder(word, match){
     }
 }
 letterFinder("test","t")
+
+
+var clothes=[];
+clothes.push("Hoodie");
+clothes.push('blue t-shirt'); 
+clothes.push('yellow t-shirt');
+clothes.push('slippers');
+clothes.push('old jeans');
+clothes.pop();
+clothes.push('green scarf');
+console.log(clothes[2]);
+console.log(clothes)
+
+
+var favCar = {};
+favCar.color = "red";
+favCar.convertible = true;
+console.log(favCar);
