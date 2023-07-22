@@ -136,7 +136,13 @@ for(var year=2023;year<=2025;year++){
 }
 
 function letterFinder(word, match){
-    for(i=0;i++; i<word.length){
-       if 
+    for(var i=0;i<word.length;i++){
+       if(word[i]==match){
+        console.log('Found',match,'at',i)
+       }
+       else{
+        console.log('---No match found at',i)
+       }
     }
 }
+letterFinder("test","t")
