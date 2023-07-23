@@ -164,3 +164,9 @@ var favCar = {};
 favCar.color = "red";
 favCar.convertible = true;
 console.log(favCar);
+
+
+function addTwoNums(a,b){
+    console.log( a + b )
+}
+addTwoNums(5,"5")
