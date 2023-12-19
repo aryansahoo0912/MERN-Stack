@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Chart</title>
+    <style>
+        #alphabet-chart {
+            position: relative;
+            max-width: 600px;
+        }
+        #example-display {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Alphabet Chart</h1>
+
+<div id="alphabet-chart">
+    <img src="alphabet_chart.png" alt="Alphabet Chart" usemap="#alphabet-map" id="alphabet-image">
+
+    <map name="alphabet-map">
+        <area shape="rect" coords="0,0,100,100" alt="A" onclick="showExample('A')">
+        <area shape="rect" coords="100,0,200,100" alt="B" onclick="showExample('B')">
+        <area shape="rect" coords="200,0,300,100" alt="C" onclick="showExample('C')">
+        <area shape="rect" coords="300,0,400,100" alt="D" onclick="showExample('D')">
+        <area shape="rect" coords="400,0,500,100" alt="E" onclick="showExample('E')">
+        <area shape="rect" coords="500,0,600,100" alt="F" onclick="showExample('F')">
+        <area shape="rect" coords="0,100,100,200" alt="G" onclick="showExample('G')">
+        <area shape="rect" coords="100,100,200,200" alt="H" onclick="showExample('H')">
+        <area shape="rect" coords="200,100,300,200" alt="I" onclick="showExample('I')">
+        <area shape="rect" coords="300,100,400,200" alt="J" onclick="showExample('J')">
+        <area shape="rect" coords="400,100,500,200" alt="K" onclick="showExample('K')">
+        <area shape="rect" coords="500,100,600,200" alt="L" onclick="showExample('L')">
+        <area shape="rect" coords="0,200,100,300" alt="M" onclick="showExample('M')">
+        <area shape="rect" coords="100,200,200,300" alt="N" onclick="showExample('N')">
+        <area shape="rect" coords="200,200,300,300" alt="O" onclick="showExample('O')">
+        <area shape="rect" coords="300,200,400,300" alt="P" onclick="showExample('P')">
+        <area shape="rect" coords="400,200,500,300" alt="Q" onclick="showExample('Q')">
+        <area shape="rect" coords="500,200,600,300" alt="R" onclick="showExample('R')">
+        <area shape="rect" coords="0,300,100,400" alt="S" onclick="showExample('S')">
+        <area shape="rect" coords="100,300,200,400" alt="T" onclick="showExample('T')">
+        <area shape="rect" coords="200,300,300,400" alt="U" onclick="showExample('U')">
+        <area shape="rect" coords="300,300,400,400" alt="V" onclick="showExample('V')">
+        <area shape="rect" coords="400,300,500,400" alt="W" onclick="showExample('W')">
+        <area shape="rect" coords="500,300,600,400" alt="X" onclick="showExample('X')">
+        <area shape="rect" coords="0,400,100,500" alt="Y" onclick="showExample('Y')">
+        <area shape="rect" coords="100,400,200,500" alt="Z" onclick="showExample('Z')">
+    </map>
+</div>
+
+<div id="example-display">
+    <!-- The displayed example will appear here -->
+</div>
+
+<script>
+    function showExample(alphabet) {
+        const examples = {
+            'A': 'Apple',
+            'B': 'Banana',
+            'C': 'Cat',
+            'D': 'Dog',
+            'E': 'Elephant',
+            'F': 'Fish',
+            'G': 'Giraffe',
+            'H': 'Horse',
+            'I': 'Ice Cream',
+            'J': 'Jellyfish',
+            'K': 'Kangaroo',
+            'L': 'Lion',
+            'M': 'Monkey',
+            'N': 'Nest',
+            'O': 'Orange',
+            'P': 'Penguin',
+            'Q': 'Queen',
+            'R': 'Rainbow',
+            'S': 'Sun',
+            'T': 'Tree',
+            'U': 'Umbrella',
+            'V': 'Violin',
+            'W': 'Whale',
+            'X': 'Xylophone',
+            'Y': 'Yogurt',
+            'Z': 'Zebra',
+        };
+
+        const exampleDisplay = document.getElementById('example-display');
+        exampleDisplay.textContent = `Example for ${alphabet}: ${examples[alphabet] || 'Not available'}`;
+    }
+</script>
+
+</body>
+</html>
